@@ -1,0 +1,30 @@
+{
+  "name": "mini-project",
+  "version": "1.0.0",
+  "description": "",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /hw-parcel/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Timupas/mini-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Timupas/mini-project/issues"
+  },
+  "homepage": "https://github.com/Timupas/mini-project#readme",
+  "dependencies": {
+    "parcel": "^2.16.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
