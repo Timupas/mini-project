@@ -1,12 +1,12 @@
 const form = document.getElementById("search-form");
 const list = document.querySelector(".gallery");
-const btnLoad = document.querySelector(".load");
+const loadBtn = document.querySelector(".load");
 
 const API_KEY = "54251374-33f104c965fd5fe2f8dc6164f";
 const PER_PAGE = 12;
 
 let page = 1;
-let searchText = " ";
+let searchText = "";
 
 async function getImg() {
   try {
@@ -15,7 +15,7 @@ async function getImg() {
     const data = await response.json();
     return data.hits;
   } catch (error) {
-    console.log("Сталася помилка(");
+    console.log("Error(");
     return [];
   }
 }
